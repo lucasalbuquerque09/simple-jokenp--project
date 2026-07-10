@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Start Game</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+      
+      <h1>Battle</h1>
+    
+    </header>
+    <!-- Main Content -->
+    <div id="main">
+       <!-- Seção de Batalha -->
+        <section id="sectionBattle">
+            <!-- Caixa de exibição de resultados -->
+            <div id="boxShowResult">
+                <!-- Resultado do jogador -->
+                <div class="gameResult player">
+                    
+                    <p>Player</p>
+                    <span id="playerResult">0</span>
+                
+                </div>
+                <!-- Resultado da CPU -->
+                <div class="gameResult cpu">
+                    
+                    <p>CPU</p>
+                    <span id="cpuResult">0</span>
+                
+                </div>
+            
+            </div>
+            
+            
+            <!-- Área de exibição de escolhas -->
+            <div id="boxShowSelection">
+                <!-- Escolha do jogador -->
+                <div class="showChoice">
+                    
+                    <h3>You</h3>
+                    <div class="apply">
+                        
+                        <p id="playerChoice">Waiting...</p>
+                    
+                    </div>
+                
+                </div>
+            
+                <span>VS</span>
+                <!-- Escolha da CPU -->
+                <div class="showChoice">
+                    
+                    <h3>CPU</h3>
+                    <div class="apply">
+                        
+                        <p id="cpuChoice">Waiting...</p>
+                    
+                    </div>
+                
+                </div>
+           
+            </div>
+        
+        </section>
+        <!-- Seção de Seleção -->
+        <section id="selectChoice">
+            
+            <h2>Make Your Move</h2>
+            
+            <!-- Caixa de seleção de escolhas -->
+            <div id="boxSelectChoice">
+                <!-- Escolha Pedra -->
+                <div class="choice choiceRock">
+                    
+                    <button type="submit" id="rock" onclick="humanPlayer('rock')">&#x1F44A</button>
+                    <p>Rock</p>
+                
+                </div>
+                <!-- Escolha Papel -->
+                <div class="choice choicePaper">
+                    
+                    <button type="submit" id="paper" onclick="humanPlayer('paper')">&#x1F91A</button>
+                    <p>Paper</p>
+                
+                </div>
+                <!-- Escolha Tesoura -->
+                <div class="choice choiceScissors">
+                    
+                    <button type="submit" id="scissors" onclick="humanPlayer('scissors')">&#x270C</button>
+                    <p>Scissors</p>
+                
+                </div>
+            
+            </div>
+
+            <!-- Área de botões -->
+            <div id="boxBtn">
+                
+                <!-- Botão de reset -->
+                <button id="btnReset" type="submit"><i class="bi bi-arrow-clockwise"></i> Reset Game</button>
+                <!-- Link para retornar ao menu principal -->
+                <a href="/index.html" target="_self" rel="prev"><i class="bi bi-arrow-bar-left"></i> Return to the main menu</a>
+            
+            </div>
+        
+        </section>
+
+    </div>
+    <script src="/src/js/script.js"></script>
+</body>
+</html>

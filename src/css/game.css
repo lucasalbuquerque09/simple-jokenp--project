@@ -1,0 +1,366 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* variáveis globais */
+:root {
+    --FontHeadline: "Plus Jakarta Sans", sans-serif;
+    --fontBoby: "Inter", sans-serif;
+
+    --colorPrimary: #23529e;
+    --colorSecondary: #f97316;
+    --colorTertiary: #8b5cf6;
+    --colorNeutral1: #f3f4f6;
+    --colorNeutral2: #1F2937;
+}
+
+/* estilos globais */
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorNeutral1);
+    overflow-x: hidden;
+}
+
+/* cabeçalho */
+#header {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    font-family: var(--FontHeadline);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+    color: var(--colorPrimary);
+}
+
+/* main */
+#main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* seção de batalha */
+#sectionBattle {
+    width: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+/* caixa de exibição de resultados */
+#boxShowResult {
+    display: flex;
+    gap: 30px;
+}
+
+/* resultados do jogo */
+.gameResult {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    padding: 4px 5px;
+    border-radius: 20px;
+    background-color: var(--colorNeutral2);
+    color: var(--colorNeutral1);
+    letter-spacing: 1px;
+    font-size: .8rem;
+    font-family: var(--fontBoby);
+    font-weight: 700;
+}
+
+/* resultados individuais */
+.gameResult span {
+    background-color: var(--colorNeutral1);
+    color: var(--colorNeutral2);
+    width: 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* exibição das escolhas */
+#boxShowSelection {
+    display: flex;
+    width: calc(100% - 100px);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* exibição das escolhas individuais */
+#boxShowSelection span {
+    font-size: 2rem;
+    font-family: var(--fontBoby);
+    font-weight: 700;
+}
+
+/* área de exibição de escolhas */
+.showChoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fontBoby);
+}
+
+/* título da área de exibição de escolhas */
+.showChoice h3 {
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* área de aplicação */
+.apply {
+    border: 4px dashed rgba(0, 0, 0, 0.308);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 1rem;
+    font-family: var(--fontBoby);
+    letter-spacing: 2px;
+}
+
+
+/* área de seleção */
+#selectChoice {
+    width: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/* título da área de seleção */
+#selectChoice h2 {
+    font-family: var(--FontHeadline);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+/* caixa de seleção de escolhas */
+#boxSelectChoice {
+    display: flex;
+    gap: 10px;
+}
+
+/* botão de escolha */
+.choice,
+.choice button {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: background-color .5s ease;
+    position: relative;
+}
+
+/* botão de escolha - pedra */
+.choiceRock {
+    background-color: var(--colorSecondary);
+}
+
+/* botão de escolha - papel */
+.choicePaper {
+    background-color: var(--colorPrimary);
+}
+
+/* botão de escolha - tesoura */
+.choiceScissors {
+    background-color: var(--colorTertiary);
+}
+
+/* texto dentro do botão de escolha */
+.choice p {
+    position: absolute;
+    bottom: 15px;
+    color: var(--colorNeutral1);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: var(--fontBoby);
+}
+
+/* efeito de hover nos botões de escolha */
+.choiceRock:hover {
+    background-color: #f97416d2;
+}
+
+.choicePaper:hover {
+    background-color: #2e60afe3;
+}
+
+.choiceScissors:hover {
+    background-color: #9368f8dc;
+}
+
+/* área de botões */
+#boxBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: var(--fontBoby);
+    flex-wrap: wrap;
+}
+
+/* botão de reset */
+#btnReset {
+    width: 130px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: var(--colorNeutral1);
+    color: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: border .3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+#btnReset:hover {
+    border: 1px solid black;
+}
+
+#btnReset i {
+    font-size: .9rem;
+}
+
+/* link dentro da área de botões */
+#boxBtn a {
+    text-decoration: none;
+    color: var(--colorNeutral1);
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--colorNeutral2);
+    font-size: .9rem;
+    letter-spacing: .8px;
+}
+
+#boxBtn a:hover {
+    background: #1f2937f5;
+}
+
+/* responsivo tablet */
+@media (min-width: 577px) and (max-width: 1024px) {
+    #main {
+        gap: 0px;
+    }
+
+    #sectionBattle {
+        width: 100%;
+    }
+
+    #selectChoice {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    #boxSelectChoice {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .choice,
+    .choice button {
+        width: 220px;
+    }
+
+}
+
+/* responsivo mobile */
+@media (max-width: 576px) {
+    #main {
+        gap: 0px;
+    }
+
+    #header {
+        font-size: 1.7rem;
+    }
+
+    #sectionBattle {
+        width: 100%;
+        padding: 30px 0px;
+        gap: 20px;
+    }
+
+    #boxShowResult {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #boxShowSelection {
+        width: 100%;
+    }
+
+    #boxShowSelection span {
+        font-size: 1.5rem;
+    }
+
+    .apply {
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    #selectChoice {
+        padding: 20px 10px;
+        width: 100%;
+        gap: 30px;
+    }
+
+    #selectChoice h2 {
+        font-size: 1.5rem;
+
+    }
+
+    #boxSelectChoice {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .choice,
+    .choice button {
+        width: 100px;
+        height: 130px;
+        font-size: 2rem;
+    }
+
+    .choice p {
+        font-size: .8rem;
+    }
+
+    #boxBtn {
+        gap: 20px;
+    }
+}

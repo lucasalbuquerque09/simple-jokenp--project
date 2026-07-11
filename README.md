@@ -4,7 +4,7 @@ Projeto web simples de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **
 
 ## Sobre o projeto
 
-Este projeto apresenta uma interface moderna para jogar Jokenpô contra a CPU. O usuário escolhe entre **rock**, **paper** ou **scissors**, e o sistema sorteia automaticamente a jogada da máquina, atualizando o placar em tempo real.
+Este projeto apresenta uma interface moderna para jogar Jokenpô contra a CPU. O usuário escolhe entre **rock**, **paper** ou **scissors**, e o sistema sorteia automaticamente a jogada da máquina.
 
 ## Funcionalidades
 

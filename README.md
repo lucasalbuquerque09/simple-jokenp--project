@@ -8,11 +8,9 @@ Projeto web de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CS
 
 ## 📸 Preview
 
-> Adicione aqui uma captura de tela da aplicação, se desejar.
-
-```md
 ![Preview do projeto](./assets/preview.png)
-```
+
+> Se o arquivo de imagem não existir ainda, substitua o caminho acima pela captura real do projeto.
 
 ## 🚀 Demonstração
 
@@ -46,6 +44,8 @@ Projeto web de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CS
 .
 ├── 404.html
 ├── index.html
+├── assets
+│   └── preview.png
 └── src
     ├── css
     │   ├── game.css

@@ -1,12 +1,27 @@
-# Jokenpô
+# Jokenpô 🎮
 
-Projeto web simples de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CSS e JavaScript**.
+![GitHub repo size](https://img.shields.io/github/repo-size/lucasalbuquerque09/simple-jokenp--project)
+![GitHub last commit](https://img.shields.io/github/last-commit/lucasalbuquerque09/simple-jokenp--project)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Sobre o projeto
+Projeto web de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CSS e JavaScript**. A aplicação permite jogar contra a CPU com uma interface simples, responsiva e prática.
 
-Este projeto apresenta uma interface moderna para jogar Jokenpô contra a CPU. O usuário escolhe entre **rock**, **paper** ou **scissors**, e o sistema sorteia automaticamente a jogada da máquina.
+## 📸 Preview
 
-## Funcionalidades
+> Adicione aqui uma captura de tela da aplicação, se desejar.
+
+```md
+![Preview do projeto](./assets/preview.png)
+```
+
+## 🚀 Demonstração
+
+- Escolha entre **Rock**, **Paper** ou **Scissors**
+- A CPU faz uma jogada aleatória
+- O sistema exibe o vencedor da rodada
+- O placar é atualizado automaticamente
+
+## ✨ Funcionalidades
 
 - Página inicial com apresentação do jogo
 - Navegação para a tela principal da partida
@@ -17,7 +32,15 @@ Este projeto apresenta uma interface moderna para jogar Jokenpô contra a CPU. O
 - Página `404.html` com redirecionamento para a página inicial
 - Estrutura pronta para publicação no **GitHub Pages**
 
-## Estrutura do projeto
+## 🛠️ Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap Icons
+- Google Fonts
+
+## 📁 Estrutura do projeto
 
 ```text
 .
@@ -33,17 +56,16 @@ Este projeto apresenta uma interface moderna para jogar Jokenpô contra a CPU. O
         └── game.html
 ```
 
-## Tecnologias utilizadas
+## ▶️ Como executar o projeto
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap Icons
-- Google Fonts
+### Requisitos
 
-## Como executar o projeto
+- Navegador web atualizado
+- Opcional: extensão **Live Server** no VS Code
 
-1. Clone este repositório:
+### Passo a passo
+
+1. Clone o repositório:
 
 ```bash
 git clone https://github.com/lucasalbuquerque09/simple-jokenp--project.git
@@ -57,7 +79,23 @@ cd simple-jokenp--project
 
 3. Abra o arquivo `index.html` no navegador.
 
-## Como jogar
+Se preferir, use o **Live Server** para executar localmente.
+
+## 🌐 Deploy no GitHub Pages
+
+Este projeto pode ser publicado facilmente no GitHub Pages por ser composto apenas por arquivos estáticos.
+
+### Como publicar
+
+1. Vá até **Settings** do repositório
+2. Clique em **Pages**
+3. Em **Source**, selecione a branch principal
+4. Escolha a pasta `/root`
+5. Salve as alterações
+
+Após isso, o GitHub Pages irá gerar uma URL pública para o projeto.
+
+## 🎮 Como jogar
 
 1. Abra a página inicial
 2. Clique em **Start Game**
@@ -65,9 +103,7 @@ cd simple-jokenp--project
 4. Veja o resultado da rodada contra a CPU
 5. Use o botão **Reset Game** para reiniciar o placar
 
-## Lógica do jogo
-
-A regra implementada no JavaScript segue a estrutura abaixo:
+## 📜 Regras do jogo
 
 - Rock vence Scissors
 - Paper vence Rock
@@ -75,10 +111,20 @@ A regra implementada no JavaScript segue a estrutura abaixo:
 
 A CPU escolhe uma opção aleatória a cada rodada, e o placar é atualizado conforme o vencedor.
 
-## Publicação
+## 🤝 Contribuição
 
-O projeto pode ser publicado facilmente com **GitHub Pages**, já que é composto apenas por arquivos estáticos.
+Contribuições são sempre bem-vindas.
 
-## Autor
+Se quiser sugerir melhorias, você pode:
 
-Desenvolvido por **Lucas Albuquerque**.
+1. Fazer um fork do repositório
+2. Criar uma branch com sua feature
+3. Enviar um pull request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido com dedicação por [Lucas Albuquerque](https://github.com/lucasalbuquerque09)

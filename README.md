@@ -6,12 +6,6 @@
 
 Projeto web de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CSS e JavaScript**. A aplicação permite jogar contra a CPU com uma interface simples, responsiva e prática.
 
-## 📸 Preview
-
-![Preview do projeto](./assets/preview.png)
-
-> Se o arquivo de imagem não existir ainda, substitua o caminho acima pela captura real do projeto.
-
 ## 🚀 Demonstração
 
 - Escolha entre **Rock**, **Paper** ou **Scissors**
@@ -44,8 +38,6 @@ Projeto web de **Jokenpô (Pedra, Papel e Tesoura)** desenvolvido com **HTML, CS
 .
 ├── 404.html
 ├── index.html
-├── assets
-│   └── preview.png
 └── src
     ├── css
     │   ├── game.css
